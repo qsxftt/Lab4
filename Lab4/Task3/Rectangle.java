@@ -46,9 +46,20 @@ public class Rectangle extends Figure {
         }
     }
 
+    public double calculateDiagonal() {
+        return Math.sqrt(width * width + height * height);
+    }
+
+    public double calculateArea() {
+        return width * height;
+    }
+
     @Override
     public String getInfo() {
-        return super.getInfo() + ", стороны: " + width + " и " + height + ", площадь: " + (width * height);
+        return super.getInfo()
+                + ", стороны: " + width + " и " + height
+                + ", диагональ: " + calculateDiagonal()
+                + ", площадь: " + calculateArea();
     }
 
     @Override

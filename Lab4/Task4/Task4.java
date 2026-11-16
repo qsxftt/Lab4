@@ -7,7 +7,7 @@ import Lab4.Task2.SportEvent;
 
 public class Task4 {
     public static void main(String[] args) {
-        System.out.println("Описание расчёта: программа складывает итоговую стоимость (calculateTotalPrice) всех мероприятий в массиве.");
+        System.out.println("Описание расчёта: программа складывает итоговую стоимость (calculateTotalPrice) всех мероприятий в массиве");
 
         Event[] events = new Event[6];
         events[0] = new ConferenceEvent("Java Day", "10.11.2026", "Технопарк", 2000, 2, 500);

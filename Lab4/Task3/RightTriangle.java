@@ -50,9 +50,16 @@ public class RightTriangle extends Figure {
         return Math.sqrt(a * a + b * b);
     }
 
+    public double calculateArea() {
+        return (a * b) / 2.0;
+    }
+
     @Override
     public String getInfo() {
-        return super.getInfo() + ", катеты: " + a + " и " + b + ", гипотенуза: " + calculateHypotenuse();
+        return super.getInfo()
+                + ", катеты: " + a + " и " + b
+                + ", гипотенуза: " + calculateHypotenuse()
+                + ", площадь: " + calculateArea();
     }
 
     @Override
